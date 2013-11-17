@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Oregano|Mrs+Sheppards);
+
 /*reset*/
 
 body, div, span, applet, object, iframe,
@@ -27,6 +29,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color:#000;
+	font-family:Helvetica, Arial, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -42,4 +46,198 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/*common*/
+.clear {
+	clear:both;
+}
+nav ul{
+	display:block;
+}
+nav ul li {
+	display:block;
+	list-style:none;
+	float:left;
+}
+
+nav a {
+	text-decoration:none;
+}
+
+nav a:hover {
+	text-decoration:underline;
+}
+/*typography*/
+h1{
+	font-family:Oregano;
+	text-transform:uppercase;
+	color:#d22a09;
+	font-size:48px;
+	margin:6px 0 12px;
+	line-height:1.5;
+
+}
+h2{
+	font-family:"Mrs Sheppards";
+	font-size:36px;
+	color:#d22a09;
+	line-height:1.5;
+	margin:6px 0 12px;
+}
+h3{
+	font-size:24px;
+	line-height:1.5;
+	margin:6px 0 12px;
+}
+h4{
+	font-size:18px;
+	font-weight:bold;
+	line-height:1.5;
+	margin:5px 0 9px;}
+}
+h5{
+	font-weight:bold;
+	line-height:1.5;
+	margin:4px 0 8px;}
+p{
+	font-size:16px;
+	line-height:1.5;
+	margin:4px 0 8px;
+}
+
+
+#header_wrap{
+	position:relative;
+	z-index:2;
+	background: #fff9e8;
+	height:160px;
+}
+
+header {
+	height:120px;
+	width:100%;
+	background: url("../img/styling/pat.png")repeat center bottom;
+}
+
+header h1 {
+	display:none;
+}
+
+.logo {
+	display:block;
+	width:960px;
+	height:160px;
+	margin:0 auto;
+	background: #fff9e8;
+}
+
+.logo img {
+	margin:0 auto;
+	display:block;
+	height:140px;
+}
+
+header nav {
+    background: url("../img/styling/menuBar.svg") no-repeat center center;
+    height: 70px;
+    width: 1024px;
+    margin:-50px auto 0;
+    position:relative;
+    z-index:10;
+}
+
+header nav a {
+	display:block;
+	color:#fff;
+	font-family:Oregano;
+	padding:15px 50px;
+	font-size:25px;
+	text-transform:uppercase;
+}
+
+header nav .noLink{
+	font-family:Oregano;
+	color:#fff;
+	padding:12px 0;
+	display:block;
+	font-size:25px;
+}
+
+#body_wrap {
+	background-color: #fff9e8;
+	width:100%;
+	position: relative;
+	z-index: 1;
+}
+
+#body	{
+	background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 960px;
+    min-height:300px;
+    padding-top:20px;
+    padding-bottom:100px;
+}
+#main {
+	display:block;
+	float:left;
+	margin-left:15px;
+	width:700px;
+	/*background:cyan;*/
+}
+#side_bar {
+	display:block;
+	float:left;
+	margin-right:15px;
+	width:230px;
+	/*background:magenta;*/
+}
+#side_bar nav {
+	position:absolute;
+	bottom:0;
+	padding-bottom:180px;
+}
+#side_bar nav ul {
+	display:block;
+	width:170px;
+	margin:0 20px;
+}
+#side_bar nav li {
+	float:left;
+	clear:left;
+}
+#side_bar nav a{
+	color:#666;
+	padding:5px 0;
+	display:block;
+}
+#footer_wrap {
+	/*background:#000;
+	background: url("../img/styling/footer.svg") no-repeat center center/100% 100% transparent;*/
+	margin-top:-80px;
+	background:url("../img/styling/footer.svg");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+	color:#fff;
+	width:100%;
+	position:relative;
+	z-index:3;
+}
+footer {
+	width:960px;
+	margin: 0 auto;
+	padding-top:80px;
+}
+
+footer nav a{
+	color: #FFFFFF;
+    line-height: 1.85;
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer nav .noLink{
+	line-height:1.85;
+	padding:10px 0;
 }
