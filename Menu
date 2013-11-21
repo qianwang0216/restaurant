@@ -43,7 +43,7 @@
 			<h2>Appetizers</h2>
 			<article class="menuitem">
 				<h3>Grilled Cheese on Callah</h3>
-				<img src="grilledcheese.jpg" alt="" />
+				<img src="img/grilledcheese.jpg" alt="" />
 				<p>$4.00</p>
 				<p>
 					Gruyere cheese melted on toasted Callah bread with coleslaw on the side - a classic favorite
@@ -130,7 +130,7 @@
 			
 			<article class="menuitem">
 				<h3>Veggie Burger</h3>
-				<img src="veggieburger.gif" alt="" />
+				<img src="img/veggieburger.gif" alt="" />
 				<p>$10.00</p>
 				<p>
 					Portobello mushroom patty topped with slices of avocado and roasted red peppers served with fries or salad
