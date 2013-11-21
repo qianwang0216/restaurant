@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Contest</title>
+    <link href="contest.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="contest_game">
+        <div class="row">
+            <canvas class="active" id="canvas1_1" onclick=
+            "canvasClicked('1_1')"></canvas> <canvas class="active" id=
+            "canvas1_2" onclick="canvasClicked('1_2')"></canvas> <canvas class=
+            "active" id="canvas1_3" onclick="canvasClicked('1_3')"></canvas>
+            <canvas class="active" id="canvas1_4" onclick=
+            "canvasClicked('1_4')"></canvas> <label>Guess 1</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas2_1" onclick="canvasClicked('2_1')"></canvas>
+            <canvas id="canvas2_2" onclick="canvasClicked('2_2')"></canvas>
+            <canvas id="canvas2_3" onclick="canvasClicked('2_3')"></canvas>
+            <canvas id="canvas2_4" onclick="canvasClicked('2_4')"></canvas>
+            <label>Guess 2</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas3_1" onclick="canvasClicked('3_1')"></canvas>
+            <canvas id="canvas3_2" onclick="canvasClicked('3_2')"></canvas>
+            <canvas id="canvas3_3" onclick="canvasClicked('3_3')"></canvas>
+            <canvas id="canvas3_4" onclick="canvasClicked('3_4')"></canvas>
+            <label>Guess 3</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas4_1" onclick="canvasClicked('4_1')"></canvas>
+            <canvas id="canvas4_2" onclick="canvasClicked('4_2')"></canvas>
+            <canvas id="canvas4_3" onclick="canvasClicked('4_3')"></canvas>
+            <canvas id="canvas4_4" onclick="canvasClicked('4_4')"></canvas>
+            <label>Guess 4</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas5_1" onclick="canvasClicked('5_1')"></canvas>
+            <canvas id="canvas5_2" onclick="canvasClicked('5_2')"></canvas>
+            <canvas id="canvas5_3" onclick="canvasClicked('5_3')"></canvas>
+            <canvas id="canvas5_4" onclick="canvasClicked('5_4')"></canvas>
+            <label>Guess 5</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas6_1" onclick="canvasClicked('6_1')"></canvas>
+            <canvas id="canvas6_2" onclick="canvasClicked('6_2')"></canvas>
+            <canvas id="canvas6_3" onclick="canvasClicked('6_3')"></canvas>
+            <canvas id="canvas6_4" onclick="canvasClicked('6_4')"></canvas>
+            <label>Guess 6</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas7_1" onclick="canvasClicked('7_1')"></canvas>
+            <canvas id="canvas7_2" onclick="canvasClicked('7_2')"></canvas>
+            <canvas id="canvas7_3" onclick="canvasClicked('7_3')"></canvas>
+            <canvas id="canvas7_4" onclick="canvasClicked('7_4')"></canvas>
+            <label>Guess 7</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas8_1" onclick="canvasClicked('8_1')"></canvas>
+            <canvas id="canvas8_2" onclick="canvasClicked('8_2')"></canvas>
+            <canvas id="canvas8_3" onclick="canvasClicked('8_3')"></canvas>
+            <canvas id="canvas8_4" onclick="canvasClicked('8_4')"></canvas>
+            <label>Guess 8</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas9_1" onclick="canvasClicked('9_1')"></canvas>
+            <canvas id="canvas9_2" onclick="canvasClicked('9_2')"></canvas>
+            <canvas id="canvas9_3" onclick="canvasClicked('9_3')"></canvas>
+            <canvas id="canvas9_4" onclick="canvasClicked('9_4')"></canvas>
+            <label>Guess 9</label>
+        </div>
+
+        <div class="row">
+            <canvas id="canvas10_1" onclick="canvasClicked('10_1')"></canvas>
+            <canvas id="canvas10_2" onclick="canvasClicked('10_2')"></canvas>
+            <canvas id="canvas10_3" onclick="canvasClicked('10_3')"></canvas>
+            <canvas id="canvas10_4" onclick="canvasClicked('10_4')"></canvas>
+            <label>Guess 10</label>
+        </div>
+    </div><!-- end contest_game -->
+
+    <div id="submit_btn">
+        <input onclick="verify()" type="button" value="Submit!">
+    </div><script src="contest.js"></script>
+</body>
+</html>
