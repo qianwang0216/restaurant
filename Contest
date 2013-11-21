@@ -1,15 +1,44 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-
-    <title>Contest</title>
-    <link href="styles/contest.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title> Unnamed Diner </title>
+<link href="styles/main.css" rel="stylesheet" />
+<link href="styles/contest.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="contest_game">
+
+  
+  <div id="header_wrap">
+     <header>
+    
+        <h1> The DINER </h1>
+        <div class="logo"><img src="img/content/logo.png"></div>
+        <nav>
+          <ul>
+            <li> <a href="#" class="active"> Home </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> About Us </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Menu </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Bookings </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Contact Us </a> </li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+  </div> <!-- end header_wrap -->
+  
+  
+  <div id="body_wrap">
+    <div id="body">
+      
+      <div id="main">
+        <!--main content goes here-->
+       <div id="contest_game">
         <div class="row">
             <canvas class="active" id="canvas1_1" onclick=
             "canvasClicked('1_1')"></canvas> <canvas class="active" id=
@@ -94,6 +123,53 @@
 
     <div id="submit_btn">
         <input onclick="verify()" type="button" value="Submit!">
-    </div><script src="js/contest.js"></script>
+    </div>
+      </div>
+      <!-- end main -->
+      <div id="side_bar">
+    
+         <nav>
+          <ul>
+            <li> <a href="#"> <img src="img/content/fb.png"> /theDiner </a> </li>
+            <li> <a href="#"> <img src="img/content/tw.png"> @theDiner </a> </li>
+            <li> <a href="#"> <img src="img/content/rss.png"> Subscribe RSS </a> </li>
+           </ul>
+         </nav>
+    
+      </div> <!-- end sside_bar -->
+    
+    <div class="clear"></div>
+    </div>
+    <!-- end body -->
+  </div> <!-- end body_wrap -->
+   
+  <div id="footer_wrap">
+    <footer>
+       <nav>
+          <ul>
+            <li> <a href="#" class="active"> Home </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> About Us </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Menu </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Bookings </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Contact Us </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Careers </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Contest </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#" class="last"> Site Map </a> </li>
+          </ul>
+       </nav>
+        <div class="clear"></div>
+       <p> &#169; 2003 Team six, Contact Us. </p>
+    </footer>
+    <div class="clear"></div>
+  </div> <!-- end footer_wrap --->
+<script src="js/contest.js"> </script> 
 </body>
 </html>
+
