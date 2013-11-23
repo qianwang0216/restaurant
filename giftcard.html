@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Unnamed Diner </title>
+<link href="styles/main.css" rel="stylesheet" />
+<script type="text/javascript" src=js/vendors/jquery.js></script>
+<script type="text/javascript" src=js/plugins/jquery.multipage/jquery.multipage.js></script>
+<link rel="stylesheet" href="js/plugins/jquery.multipage/jquery.multipage.css" />
+</head>
+
+<body>
+
+  
+  <div id="header_wrap">
+     <header>
+    
+        <h1> The DINER </h1>
+        <div class="logo"><img src="img/content/logo.png"></div>
+        <nav>
+          <ul> 
+            <li> <a href="#" class="active"> Home </a> </li> 
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> About Us </a> </li>
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> Menu </a> </li>
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> Bookings </a> </li>
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#"> Contact Us </a> </li> 
+          </ul>   
+        </nav>
+        <div class="clear"></div>
+    </header>
+  </div> <!-- end header_wrap --> 
+  
+  
+  <div id="body_wrap">  
+    <div id="body">
+      
+      <div id="main">
+	<h1>Order a Giftcard</h1>
+        <form id="giftcard-form" action="thankyou.html" method="post">
+	<fieldset>
+		<legend><h2>Giftcard Information</h2></legend>	
+		<label for="rfname" >First Name:</label>
+		<input name="rfname" id="rfname" type="text" onkeyup="cardInfo()" /><br />
+		<label for="rlname" >Last Name:</label>
+		<input name="rlname" id="rlname" type="text" onkeyup="cardInfo()"/><br />
+		Amount on Card:
+		<select id="card-amt" onchange="cardInfo()">
+			<option value="10">$10</option>
+			<option value="25">$25</option>
+			<option value="50">$50</option>
+			<option value="100">$100</option>		
+		</select><br />
+		Select Card:<br />
+		<div height="300px" width="300px" id="gcpreview">
+			<p id="prefname"></p>
+			<p id="prelname"></p>
+			<p id="preprice"></p>	
+		</div>
+		<input type="radio" name="card" value="Card 1" id="gcyellow" checked="checked" onclick="changeCard(this)"/>
+		<input type="radio" name="card" value="Card 2" id="gcred" onclick="changeCard(this)"/>
+		<input type="radio" name="card" value="Card 3" id="gcbw" onclick="changeCard(this)"/>
+	
+
+	</fieldset>	
+	
+	<fieldset>
+		<legend><h2>Shipping Information</h2></legend>
+		<label for="fname">First Name</label>
+		<input name="fname" id="fname" type="text" required="required" autofocus="autofocus"><br />
+		<label for="lname">Last Name</label>
+		<input name="lname" id="lname" type="text" required="required"><br />
+		<label for="postal">Postal</label>
+		<input name="postal" id="postal" type="text" required="required" placeholder="X0X0X0" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" title="As Follows: X0X0X0"><br />
+		<label for="email">Email</label>
+		<input name="email" id="email" type="email" required="required"><br />
+		<label for="cemail">Confirm Email</label>
+		<input name="cemail" id="cemail" type="email" required="required"><br />
+		<label for="address">Address</label>
+		<input name="address" id="address" type="text"><br />
+		<label for="city">City</label>
+		<input name="city" id="city" list="cities" type="text" required="required"><br />
+		<label for="province">Province</label>
+		<select>
+			<option value="AB">Alberta</option>
+			<option value="BC">British Columbia</option>
+			<option value="MB">Manitoba</option>
+			<option value="NB">New Brunswick</option>
+			<option value="NL">Newfoundland and Labrador</option>
+			<option value="NS">Nova Scotia</option>
+			<option value="ON">Ontario</option>
+			<option value="PE">Prince Edward Island</option>
+			<option value="QC">Quebec</option>
+			<option value="SK">Saskatchewan</option>
+			<option value="NT">Northwest Territories</option>
+			<option value="NU">Nunavut</option>
+			<option value="YT">Yukon</option>
+		</select><br />
+		<label for="phone">Phone Number</label>
+		<input name="phone" id="phone" type="tel" placeholder="XXX-XXX-XXXX" title="As follows: XXX-XXX-XXXX" pattern="\d{3}-\d{3}-\d{4}" required="required">
+	</fieldset>
+	<fieldset>
+		<legend><h2>Billing Address</h2></legend>
+		<label for="fname">First Name</label>
+		<input name="fname" id="fname" type="text" required="required" autofocus="autofocus"><br />
+		<label for="lname">Last Name</label>
+		<input name="lname" id="lname" type="text" required="required"><br />
+		<label for="postal">Postal</label>
+		<input name="postal" id="postal" type="text" required="required" placeholder="X0X0X0" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" title="As Follows: X0X0X0"><br />
+		<label for="email">Email</label>
+		<input name="email" id="email" type="email" required="required"><br />
+		<label for="cemail">Confirm Email</label>
+		<input name="cemail" id="cemail" type="email" required="required"><br />
+		<label for="address">Address</label>
+		<input name="address" id="address" type="text"><br />
+		<label for="city">City</label>
+		<input name="city" id="city" list="cities" type="text" required="required"><br />
+		<label for="province">Province</label>
+		<select>
+			<option value="AB">Alberta</option>
+			<option value="BC">British Columbia</option>
+			<option value="MB">Manitoba</option>
+			<option value="NB">New Brunswick</option>
+			<option value="NL">Newfoundland and Labrador</option>
+			<option value="NS">Nova Scotia</option>
+			<option value="ON">Ontario</option>
+			<option value="PE">Prince Edward Island</option>
+			<option value="QC">Quebec</option>
+			<option value="SK">Saskatchewan</option>
+			<option value="NT">Northwest Territories</option>
+			<option value="NU">Nunavut</option>
+			<option value="YT">Yukon</option>
+		</select><br />
+		<label for="phone">Phone Number</label>
+		<input name="phone" id="phone" type="tel" placeholder="XXXXXXXXXX" title="As follows: XXXXXXXXXX" pattern="\d{3}\d{3}\d{4}" required="required">
+	
+	</fieldset>
+	<fieldset>
+		<legend><h2>Credit Card Information</h2></legend>
+		<label for="card_type">Card Type</label>
+		<select id="card_type" name="card_type">
+			<option value="visa">Visa</option>
+			<option value="mastercard">Master Card</option>
+			<option value="amex">American Express</option>
+		</select><br />
+		<label for="card_number">Card Number</label>
+		<input name="card_number" id="card_number" type="text" required="required" pattern="\d{4}-\d{4}-\d{4}-\d{4}" placeholder="XXXXXXXXXXXXXXXX" title="as follows: XXXXXXXXXXXXXXXX"><br />
+		<label for="security_number">Security Number</label>
+		<input type="password" name="security_number" id="security_number" required="required" pattern="\d{3}" maxlength="3" /><br />
+		<label for="exp_month">Expiration date:</label>
+		<input id="exp_month" name="exp_month"  type="month" min="2013-11" max="2038-12" required="required">
+	</fieldset> 
+	<fieldset>
+		<input type="submit" value="Place Order" />
+		<input type="reset" value="Reset" />
+	</fieldset>
+	</form>
+      </div>
+      <!-- end main --> 
+      <div id="side_bar">
+    
+         <nav>
+          <ul>
+            <li> <a href="#"> <img src="img/content/fb.png"> /theDiner </a> </li>
+            <li> <a href="#"> <img src="img/content/tw.png"> @theDiner </a> </li>
+            <li> <a href="#"> <img src="img/content/rss.png"> Subscribe RSS </a> </li>
+           </ul>      
+         </nav>
+    
+      </div>  <!-- end sside_bar  --> 
+    
+    <div class="clear"></div>
+    </div>
+    <!-- end body --> 
+  </div> <!--  end body_wrap --> 
+   
+  <div id="footer_wrap">  
+    <footer>
+       <nav>
+          <ul> 
+            <li> <a href="#" class="active"> Home </a> </li> 
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> About Us </a> </li> 
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> Menu </a> </li> 
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> Bookings </a> </li>
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> Contact Us </a> </li>
+            <li> <span class="noLink">|</span> </li>  
+            <li> <a href="#"> Careers </a> </li> 
+            <li> <span class="noLink">|</span> </li> 
+            <li> <a href="#"> Contest </a> </li> 
+            <li> <span class="noLink">|</span> </li>
+            <li> <a href="#" class="last"> Site Map </a> </li>
+          </ul>   
+       </nav>
+        <div class="clear"></div>
+       <p> &#169; 2003 Team six, Contact Us. </p>
+    </footer> 
+    <div class="clear"></div>
+  </div> <!-- end footer_wrap ---> 
+
+</body>
+
+<script type="text/javascript" src=js/giftcard.js></script>
+</html>
