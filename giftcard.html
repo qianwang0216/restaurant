@@ -55,53 +55,18 @@
 			<option value="100">$100</option>		
 		</select><br />
 		Select Card:<br />
-		<div height="300px" width="300px" id="gcpreview">
-			<p id="prefname"></p>
-			<p id="prelname"></p>
-			<p id="preprice"></p>	
-		</div>
 		<input type="radio" name="card" value="Card 1" id="gcyellow" checked="checked" onclick="changeCard(this)"/>
 		<input type="radio" name="card" value="Card 2" id="gcred" onclick="changeCard(this)"/>
 		<input type="radio" name="card" value="Card 3" id="gcbw" onclick="changeCard(this)"/>
-	
+
+		<div id="gcpreview">
+			<span id="prefname"> </span>
+			<span id="prelname"></span>
+			<p id="preprice"></p>	
+		</div>
+		
 
 	</fieldset>	
-	
-	<fieldset>
-		<legend><h2>Shipping Information</h2></legend>
-		<label for="fname">First Name</label>
-		<input name="fname" id="fname" type="text" required="required" autofocus="autofocus"><br />
-		<label for="lname">Last Name</label>
-		<input name="lname" id="lname" type="text" required="required"><br />
-		<label for="postal">Postal</label>
-		<input name="postal" id="postal" type="text" required="required" placeholder="X0X0X0" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" title="As Follows: X0X0X0"><br />
-		<label for="email">Email</label>
-		<input name="email" id="email" type="email" required="required"><br />
-		<label for="cemail">Confirm Email</label>
-		<input name="cemail" id="cemail" type="email" required="required"><br />
-		<label for="address">Address</label>
-		<input name="address" id="address" type="text"><br />
-		<label for="city">City</label>
-		<input name="city" id="city" list="cities" type="text" required="required"><br />
-		<label for="province">Province</label>
-		<select>
-			<option value="AB">Alberta</option>
-			<option value="BC">British Columbia</option>
-			<option value="MB">Manitoba</option>
-			<option value="NB">New Brunswick</option>
-			<option value="NL">Newfoundland and Labrador</option>
-			<option value="NS">Nova Scotia</option>
-			<option value="ON">Ontario</option>
-			<option value="PE">Prince Edward Island</option>
-			<option value="QC">Quebec</option>
-			<option value="SK">Saskatchewan</option>
-			<option value="NT">Northwest Territories</option>
-			<option value="NU">Nunavut</option>
-			<option value="YT">Yukon</option>
-		</select><br />
-		<label for="phone">Phone Number</label>
-		<input name="phone" id="phone" type="tel" placeholder="XXX-XXX-XXXX" title="As follows: XXX-XXX-XXXX" pattern="\d{3}-\d{3}-\d{4}" required="required">
-	</fieldset>
 	<fieldset>
 		<legend><h2>Billing Address</h2></legend>
 		<label for="fname">First Name</label>
