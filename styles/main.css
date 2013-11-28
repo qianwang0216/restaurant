@@ -253,8 +253,11 @@ footer nav .noLink{
 	display: block;
 	height: 150px;
 	width: 250px;
-	font-family:"Mrs Sheppards";
-	background: yellow;
+	font-family:"Oregano";
+	text-align: center;
+	background: #681207;
+	color: #fff9e8;
+	border: 1px solid #d8d8d8;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 -o-border-radius: 10px;
@@ -262,6 +265,13 @@ border-radius: 10px;
 }
 
 
-#gcpreview span {
+#gcpreview p {
 	font-size: 24px;
+}
+
+#gcpreview img {
+	width: 200px;
+	padding: 0 25px;
+	background: #fff9e8;
+	margin: 10px 0;
 }

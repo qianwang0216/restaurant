@@ -44,9 +44,9 @@
 	<fieldset>
 		<legend><h2>Giftcard Information</h2></legend>	
 		<label for="rfname" >First Name:</label>
-		<input name="rfname" id="rfname" type="text" onkeyup="cardInfo()" /><br />
+		<input name="rfname" id="rfname" type="text" required="required" onkeyup="cardInfo()" /><br />
 		<label for="rlname" >Last Name:</label>
-		<input name="rlname" id="rlname" type="text" onkeyup="cardInfo()"/><br />
+		<input name="rlname" id="rlname" type="text" required="required" onkeyup="cardInfo()"/><br />
 		Amount on Card:
 		<select id="card-amt" onchange="cardInfo()">
 			<option value="10">$10</option>
@@ -60,9 +60,9 @@
 		<input type="radio" name="card" value="Card 3" id="gcbw" onclick="changeCard(this)"/>
 
 		<div id="gcpreview">
-			<span id="prefname"> </span>
-			<span id="prelname"></span>
+			<img src="img/content/logo.png" alt="" />
 			<p id="preprice"></p>	
+			<p>To: <span id="prefname"></span> <span id="prelname"></span></p>
 		</div>
 		
 
@@ -89,7 +89,7 @@
 			<option value="BC">British Columbia</option>
 			<option value="MB">Manitoba</option>
 			<option value="NB">New Brunswick</option>
-			<option value="NL">Newfoundland and Labrador</option>
+			<option value="NL">#d22a09Newfoundland and Labrador</option>
 			<option value="NS">Nova Scotia</option>
 			<option value="ON">Ontario</option>
 			<option value="PE">Prince Edward Island</option>
@@ -112,17 +112,20 @@
 			<option value="amex">American Express</option>
 		</select><br />
 		<label for="card_number">Card Number</label>
-		<input name="card_number" id="card_number" type="text" required="required" pattern="\d{4}-\d{4}-\d{4}-\d{4}" placeholder="XXXXXXXXXXXXXXXX" title="as follows: XXXXXXXXXXXXXXXX"><br />
+		<input name="card_number" id="card_number" type="text" required="required" pattern="\d{4}-\d{4}-\d{4}-\d{4}" placeholder="XXXX-XXXX-XXXX-XXXX" title="as follows: XXXX-XXXX-XXXX-XXXX"><br />
 		<label for="security_number">Security Number</label>
 		<input type="password" name="security_number" id="security_number" required="required" pattern="\d{3}" maxlength="3" /><br />
 		<label for="exp_month">Expiration date:</label>
 		<input id="exp_month" name="exp_month"  type="month" min="2013-11" max="2038-12" required="required">
 	</fieldset> 
 	<fieldset>
-		<input type="submit" value="Place Order" />
+		<input type="submit" value="Place Order" /><br />
 		<input type="reset" value="Reset" />
 	</fieldset>
 	</form>
+	<div id="tymsg">
+	
+	</div>
       </div>
       <!-- end main --> 
       <div id="side_bar">
