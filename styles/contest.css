@@ -16,7 +16,7 @@
     border:1px solid green;
    }
    
-   .active:hover{
+   canvas.active:hover{
 	border:1px solid #68ff7d;    
    }
 
