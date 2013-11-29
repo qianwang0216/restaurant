@@ -195,7 +195,7 @@ header nav .noLink{
 #side_bar nav {
 	position:absolute;
 	bottom:0;
-	padding-bottom:180px;
+	padding-bottom:100px;
 }
 #side_bar nav ul {
 	display:block;
