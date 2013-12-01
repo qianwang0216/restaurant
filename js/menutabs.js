@@ -1,10 +1,10 @@
 /*
 	To Andre:
 	
-	This jQuery code is based off of a Youtube tutorial by PhpAcademy entitled "Build a Simple jQuery Tabbing System" and uploaded on Nov 29, 2013
+	This jQuery code is based off of a Youtube tutorial by PhpAcademy entitled "Build a Simple jQuery Tabbing System" that was uploaded on Nov 29, 2013
 	-- url: http://www.youtube.com/watch?v=8C3dNZs5FQg&list=PLfdtiltiRHWEepS-Zk82wZ_Qwb9_doRvs&index=1	
 
-	I (Bronek) have also taken the time to make sure how it works before using it here.	
+	I (Bronek) have also taken the time to understand how it works before using it here.	
 */
 
 $('#main > #menutitles li a').on('click', function(){
