@@ -67,14 +67,22 @@ nav a {
 nav a:hover {
 	text-decoration:underline;
 }
+
+input, select, textarea {
+	border:2px solid #651404;
+	border-radius:3px;
+	margin-bottom:5px;
+}
 /*typography*/
 h1{
 	font-family:Oregano;
 	text-transform:uppercase;
-	color:#d22a09;
+	color:#651404;
 	font-size:48px;
 	margin:6px 0 12px;
 	line-height:1.5;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #ffcd09;
 
 }
 h2{
@@ -88,6 +96,9 @@ h3{
 	font-size:24px;
 	line-height:1.5;
 	margin:6px 0 12px;
+	background: #ffcd09;
+	color: #651404;
+	padding: 5px 10px;
 }
 h4{
 	font-size:18px;
@@ -182,7 +193,8 @@ header nav .noLink{
 	display:block;
 	float:left;
 	margin-left:15px;
-	width:700px;
+	width:685px;
+	padding-left:15px;
 	/*background:cyan;*/
 }
 #side_bar {
@@ -275,3 +287,39 @@ border-radius: 10px;
 	background: #fff9e8;
 	margin: 10px 0;
 }
+
+.menucat {
+	float:left;
+}
+
+.menuitem {
+	width:440px;
+	display:block;
+	float:left;
+	padding-bottom:5px;
+	border-bottom: 2px solid #651404 ;
+	margin-bottom: 10px ;
+}
+
+.menuImgWrapper {
+	width:210px;
+	display:block;
+	float:left;
+	margin-right:20px;
+}
+
+.menuitem img {
+	max-width:100%;
+	width:auto;
+	height:auto;
+}
+
+.sidebarCont {
+	background:url("../images/styling/sidebar.svg");
+	color:#fff;
+}
+
+
+.sidebarCont div, .sidebarCont article  {
+	background: #D82315;
+}	
