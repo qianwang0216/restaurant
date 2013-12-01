@@ -38,42 +38,172 @@
       <div id="main">
       <!-- --------------------------------------------------------------------- -->
 
-        <!--main content goes here--> <!--
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum. Morbi nec urna eget felis pretium aliquam sit amet id quam. Nam porttitor convallis nunc, sed pretium nisl blandit at. Aenean porta nisi a commodo rhoncus. Praesent nisi erat, commodo et eleifend ac, sagittis et nulla. Morbi fringilla pharetra est, ut consectetur orci consequat vitae.</p>
+   <!--main content goes here-->
+   
+   <div id="pastEvents">
+	<section id="sec_birth"> 
+    Maggies Birthday party held on 21st Oct 2013 <br/>
+        <img id="bday" src="img/bookings/bday.jpg" width="120px" height="80px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatis risus. In at placerat odio, fermentum elementum lectus. Integer tellus diam, itae turpis. Nunc sed justo tincidunt, vulputate magna eget, fermentum neque. Ut fringilla felis justo,  Donec aliquam lorem a sapien scelerisque, at placerat risus</h5> </p>
+    </section> <!--End of Birthday Section -->
+    <section id="sec_xmas">
+   2012 xmas party <br/>
+        <img id="bday" src="img/bookings/xmas.jpg" width="120px" height="80px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non ven vitae turpis. Nunc sed justo tincidunt, vulputate magna eget, fermentum neque. Ut fringilla felis justo,  Donec aliquam lorem a sapien scelerisque, at placerat risus</h5> </p>
+    
+    </section><!--End of Xmas Section -->
+    <section id="sec_offCel">
+            <img id="bday" src="img/bookings/office party.jpg" width="120px" height="80px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatitae turpis. Nunc sed justo tincidunt, vulputate magna eget, fermentum neque. Ut fringilla felis justo,  Donec aliquam lorem a sapien scelerisque, at placerat risus</h5> </p>
+    </section> <!--End of office celebertion Section -->
+    
+</div>
+<hr>
 
-      <p>Aenean in tellus non nibh fringilla sagittis. Integer ullamcorper rhoncus orci non scelerisque. In sagittis dolor ac enim dapibus pretium. Sed molestie quam ligula, ac vulputate magna commodo vitae. Praesent commodo libero sapien, eget rutrum nunc bibendum a. Duis ultrices consectetur orci vitae commodo. Integer cursus rutrum malesuada. Integer odio diam, scelerisque sit amet molestie vel, dictum sed erat. Sed laoreet eu justo in gravida. Fusce tincidunt tortor vitae pharetra lobortis. Sed accumsan justo ut massa gravida interdum. Phasellus pulvinar arcu eget nibh semper vestibulum. </p> -->
-            <fieldset>
+<div id="next_E">
+<h2>upcomming events </h2>
+ <ul class=" nextE">
+    	<li>7th year celebrtion on XYZ company on December 15th</li>
+        <li>Joh's birthday party on December 18th</li>
+        <li>Employer of the year on ABC company December 20th</li>
+        <li>Xmas part on December 24th</li>
+        <li>31st Night on December 31st</li>
+ </ul>
+ 			more..... select month
 
-	  	<legend><h2> Book a Table</h2> </legend>
+<table width="800"  cellpadding="2">
+ <thead>
+ <tr>
+ <!--<td class="title">Type:</td> -->
+ <td class="field">
+ <select name="type" onchange="display(this,'jan','feb','mar');">
+ <option>Please select:</option>
+ <option value="jan">January</option>
+ <option value="feb">February</option>
+ <option value="mar">March</option>
+ <option value="mar">April</option>
+ <option value="mar">May</option>
+ <option value="mar">June</option>
+ <option value="mar">July</option>
+ <option value="mar">August</option>
+ <option value="mar">September</option>
+ <option value="mar">October</option>
+ <option value="mar">November</option>
+ <option value="mar">December</option>
+ <option value="invisible">Invisible</option>
+ </select>
+ </td>
+ </tr>
+ </thead>
 
-	     <label for="sel_date">Select Date</label>
-	     <input type="date">
-	     <br>
-	     <label for="sel_Time">Select Time</label>
-	     <input type="">
-	     <br>
-	     <label for="size">party size</label>
-	      <input type="number" name="p_size" id="p_size" value="1" step="1" min="1" max="20" placeholder="Number of seats required">
-	     <br>
-	        <input type="button" id="btn_submit" name="btn_submit" value="Find a Table">
-	  </fieldset>
+ 
+ <tbody id="jan" style="display: none;">
+ <tr>
+ <td > * 7th year celebrtion on XYZ company on December 15th</td>
+ </tr>
+ <td > * Joh's birthday party on December 18th</td>
+ </tr>
+ <td > * Employer of the year on ABC company December 20th</td>
+ </tr>
+ <td > * Xmas part on December 24th</td>
+ </tr>
+ <td > * 31st Night on December 31st</td>
+ 
+ <!--<td class="field"><input type="text" name="color" size="8" maxlength="7" /></td> -->
+ </tr>
+ </tbody>
+ 
 
-	  <br><br>
-	  <label for="Address">Address : 201, ABC Road ,Toronto,ON, M5B 6G7 </label> <br>
-	  <label for="cuisine">Cuisine : Continental</label><br>
-	  <label for="price">Price : CAN $ 20 and over</label>
-	  <br><br>
-	     Onces User Click submit I will display availability using java script
-	   <label for="Output_check">ime  Table no (n) is available for(n1 of people) at (date and T) </label> <br>
- change search...
+ 
+ <tbody id="feb" style="display: none;">
+ <tr>
+ <td > * 85th aniversary of MNP corporation</td>
+ </tr>
+ <td > * Shaa's birthday party</td>
+ 
+ </tr>
+ </tbody>
+ 
+  <tbody id="mar" style="display: none;">
+ <tr>
+ <td > oops.....No data to present .....</td>
+ </tr>
 
-      </div>
-      <!-- end main -->
+ </tbody>
+
+ </table>
+
+</div> <!--End of next booking event (next_E)-->
+<div id="nextE"> 
+<h2>Book your next event with us</h2>
+
+<h3>Check availability</h3> 
+
+  <fieldset>
+
+	<legend><h2> Book a Table</h2> </legend> 
+  
+   <label for="sel_date">Select Date</label>
+   <input type="date" id="pic_date">
+   
+<label for="size">party size</label>
+    <input type="number" name="p_size" id="p_size" value="1" step="1" min="1" max="20" placeholder="Number of seats required">
+   
+<label for="se_time">Select Time</label>
+<select name="Sel_Time" id="Sel_Time" onChange="leaveChange()">
+   	 	<option value="six">Select time </option>
+        <option value="six">6.00pm-6.30pm </option>
+    	<option value="sixT">6.30PM-7.00PM</option>
+   		<option value="six">7.00PM-7.30PM</option>
+    	<option value="sixT">7.30pm-8.00pm </option>
+    	<option value="sixT">8.00PM-8.30PM</option>
+    	<option value="six">8.30PM-9.00PM</option>
+    	<option value="six">9.00pm-9.30pm </option>
+    </select><br>
+<div id="message"></div>
+<br>
+<label for="Address">Address : 201, ABC Road ,Toronto,ON, M5B 6G7 </label> <br>
+<label for="cuisine">Cuisine : Continental</label><br>
+<label for="price">Price : CAN $ 20 and over</label>
+<br><br>
+  
+ 
+ </fieldset>
+ <a href="#1" name="1" onclick="return show();">Complete Reservation form</a>
+
+ </div> <!--End of check availability -->
+<div id="detail" style="display:none;">
+<fieldset>
+<legend><h2> Complete your reservation</h2> </legend> 
+<label for="dname">Diner Name</label>
+ <input type="text" name="f_name" id="f_name" placeholder="First Name" required>
+  <input type="text" name="l_name" id="l_name" placeholder="Last Name" required><br>
+<label for="dphone">Phone</label>
+ <input type="text" name="m_phone" id="m_phone" placeholder="Mobile phone" >
+  <input type="text" name="h_phone" id="h_phone" placeholder="home phonee" required><br>
+<label for="demail">e-mail</label>
+  <input type="email" name="email" id="email" ><br>
+   <label for="seat_type">Is this a first time at this resturent</label>
+   <input type="radio" name="ryes" id="ryes" value="yes">Yes
+   <input type="radio" name="rno" id="rno" value="no">No<br>
+   
+   <input type="checkbox" name="doffers" id="doffers" title="Sign me to receive dianing offers" value="d_offers">Sign me to receive dianing offers<br>
+   <input type="checkbox" name="soffers" id="soffers" title="Please send me a special offers" value="s_offers">Please send me a special offers<br>
+
+   
+<label for="srequest">Special Request</label>
+ <input type="text" name="S_req" id="S_req" placeholder="Your text here" required>
+  
+     <br>
+      <input type="button" id="btn_submit" name="btn_submit" value="Submit" onClick="return hide(),thankmsg();"> 
+      
+</fieldset>
+
+
+<div id="msg1"></div>
+</div> <!--end of detail reservation form -->
+   
+      </div> <!-- end main --> 
 
 
        <!-- --------------------------------------------------------------------- -->
