@@ -39,13 +39,13 @@ function display(obj,id1,id2,id3) {
 		
     }     
     else{
-        document.getElementById("message").innerHTML = "Sorry all tables occupied";
+        document.getElementById("message").innerHTML = "Sorry, all tables occupied";
     }        
 }
 
 //----------------------------------------------
 
 function thankmsg() {
-      document.getElementById("msg1").innerHTML = "Thank you for your reservation. Hope to see you soon....";
+      document.getElementById("msg1").innerHTML = "Thank you for your reservation. Hope to see you soon!";
 		
     }   

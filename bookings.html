@@ -16,13 +16,13 @@
         <div class="logo"><img src="img/content/logo.png"></div>
         <nav>
           <ul>
-            <li> <a href="home.html" class="active"> Home </a> </li>
+            <li> <a href="home.html"> Home </a> </li>
             <li> <span class="noLink">|</span> </li>
             <li> <a href="aboutus.html"> About Us </a> </li>
             <li> <span class="noLink">|</span> </li>
             <li> <a href="menu.html"> Menu </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="bookings.html"> Bookings </a> </li>
+            <li> <a href="bookings.html"  class="active"> Bookings </a> </li>
             <li> <span class="noLink">|</span> </li>
             <li> <a href="contactus.html"> Contact Us </a> </li>
           </ul>
@@ -36,32 +36,14 @@
     <div id="body">
 
       <div id="main">
-      <!-- --------------------------------------------------------------------- -->
 
    <!--main content goes here-->
    
-   <div id="pastEvents">
-	<section id="sec_birth"> 
-    Maggies Birthday party held on 21st Oct 2013 <br/>
-        <img id="bday" src="img/bookings/bday.jpg" width="120px" height="80px">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatis risus. In at placerat odio, fermentum elementum lectus. Integer tellus diam, itae turpis. Nunc sed justo tincidunt, vulputate magna eget, fermentum neque. Ut fringilla felis justo,  Donec aliquam lorem a sapien scelerisque, at placerat risus</h5> </p>
-    </section> <!--End of Birthday Section -->
-    <section id="sec_xmas">
-   2012 xmas party <br/>
-        <img id="bday" src="img/bookings/xmas.jpg" width="120px" height="80px">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non ven vitae turpis. Nunc sed justo tincidunt, vulputate magna eget, fermentum neque. Ut fringilla felis justo,  Donec aliquam lorem a sapien scelerisque, at placerat risus</h5> </p>
-    
-    </section><!--End of Xmas Section -->
-    <section id="sec_offCel">
-            <img id="bday" src="img/bookings/office party.jpg" width="120px" height="80px">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatitae turpis. Nunc sed justo tincidunt, vulputate magna eget, fermentum neque. Ut fringilla felis justo,  Donec aliquam lorem a sapien scelerisque, at placerat risus</h5> </p>
-    </section> <!--End of office celebertion Section -->
-    
-</div>
-<hr>
+   <h1>Bookings</h1>
+
 
 <div id="next_E">
-<h2>upcomming events </h2>
+<h2>Upcomming events </h2>
  <ul class=" nextE">
     	<li>7th year celebrtion on XYZ company on December 15th</li>
         <li>Joh's birthday party on December 18th</li>
@@ -69,13 +51,10 @@
         <li>Xmas part on December 24th</li>
         <li>31st Night on December 31st</li>
  </ul>
- 			more..... select month
+  <h4>To see more, select month</h4>
 
-<table width="800"  cellpadding="2">
- <thead>
- <tr>
- <!--<td class="title">Type:</td> -->
- <td class="field">
+
+ 
  <select name="type" onchange="display(this,'jan','feb','mar');">
  <option>Please select:</option>
  <option value="jan">January</option>
@@ -90,59 +69,35 @@
  <option value="mar">October</option>
  <option value="mar">November</option>
  <option value="mar">December</option>
- <option value="invisible">Invisible</option>
  </select>
- </td>
- </tr>
- </thead>
+
 
  
- <tbody id="jan" style="display: none;">
- <tr>
- <td > * 7th year celebrtion on XYZ company on December 15th</td>
- </tr>
- <td > * Joh's birthday party on December 18th</td>
- </tr>
- <td > * Employer of the year on ABC company December 20th</td>
- </tr>
- <td > * Xmas part on December 24th</td>
- </tr>
- <td > * 31st Night on December 31st</td>
- 
- <!--<td class="field"><input type="text" name="color" size="8" maxlength="7" /></td> -->
- </tr>
- </tbody>
+ <ul id="jan" style="display: none;">
+   <li>7th year celebrtion on XYZ company on January 15th</li>
+   <li>Joh's birthday party on January 18th</li>
+   <li>Employer of the year on ABC company January 20th</li>
+ </ul>
  
 
  
- <tbody id="feb" style="display: none;">
- <tr>
- <td > * 85th aniversary of MNP corporation</td>
- </tr>
- <td > * Shaa's birthday party</td>
+ <ul id="feb" style="display: none;">
+   <li>85th aniversary of MNP corporation</li>
+   <li>Shaa's birthday party</li>
+ </ul>
  
- </tr>
- </tbody>
  
-  <tbody id="mar" style="display: none;">
- <tr>
- <td > oops.....No data to present .....</td>
- </tr>
+  <ul id="mar" style="display: none;">
+    <li> No bookings yet</li>
+  </ul>
 
- </tbody>
-
- </table>
 
 </div> <!--End of next booking event (next_E)-->
 <div id="nextE"> 
 <h2>Book your next event with us</h2>
 
-<h3>Check availability</h3> 
-
+<h4>Check availability</h4> 
   <fieldset>
-
-	<legend><h2> Book a Table</h2> </legend> 
-  
    <label for="sel_date">Select Date</label>
    <input type="date" id="pic_date">
    
@@ -162,37 +117,38 @@
     </select><br>
 <div id="message"></div>
 <br>
-<label for="Address">Address : 201, ABC Road ,Toronto,ON, M5B 6G7 </label> <br>
-<label for="cuisine">Cuisine : Continental</label><br>
-<label for="price">Price : CAN $ 20 and over</label>
-<br><br>
+<p>Address: 201, ABC Road,Toronto, ON, M5B 6G7 </p>
+<p>Cuisine: Continental</p>
+<p>Price: CAN $ 20 and over</p>
+
   
  
  </fieldset>
- <a href="#1" name="1" onclick="return show();">Complete Reservation form</a>
+ <a href="#1" name="1" onclick="return show();" class="buttonLink wide">Reserve Table</a>
 
  </div> <!--End of check availability -->
+ <div class="clear"></div>
 <div id="detail" style="display:none;">
-<fieldset>
-<legend><h2> Complete your reservation</h2> </legend> 
-<label for="dname">Diner Name</label>
+<fieldset >
+  <br>
+<label for="dname">Guest Name</label>
  <input type="text" name="f_name" id="f_name" placeholder="First Name" required>
   <input type="text" name="l_name" id="l_name" placeholder="Last Name" required><br>
 <label for="dphone">Phone</label>
  <input type="text" name="m_phone" id="m_phone" placeholder="Mobile phone" >
   <input type="text" name="h_phone" id="h_phone" placeholder="home phonee" required><br>
-<label for="demail">e-mail</label>
+<label for="demail">E-mail</label>
   <input type="email" name="email" id="email" ><br>
-   <label for="seat_type">Is this a first time at this resturent</label>
+   <label for="seat_type">Is this your first time at this restaurant?</label>
    <input type="radio" name="ryes" id="ryes" value="yes">Yes
    <input type="radio" name="rno" id="rno" value="no">No<br>
    
-   <input type="checkbox" name="doffers" id="doffers" title="Sign me to receive dianing offers" value="d_offers">Sign me to receive dianing offers<br>
-   <input type="checkbox" name="soffers" id="soffers" title="Please send me a special offers" value="s_offers">Please send me a special offers<br>
+   <input type="checkbox" name="doffers" id="doffers" title="Sign me to receive dianing offers" value="d_offers">Sign me up to receive dining offers<br>
+   <input type="checkbox" name="soffers" id="soffers" title="Please send me a special offers" value="s_offers">Send me special offers<br><br>
 
    
 <label for="srequest">Special Request</label>
- <input type="text" name="S_req" id="S_req" placeholder="Your text here" required>
+ <input type="text" name="S_req" id="S_req" placeholder="Your text here">
   
      <br>
       <input type="button" id="btn_submit" name="btn_submit" value="Submit" onClick="return hide(),thankmsg();"> 
@@ -200,15 +156,34 @@
 </fieldset>
 
 
-<div id="msg1"></div>
+
 </div> <!--end of detail reservation form -->
-   
+ <div id="msg1" style="padding-top:10px"></div>  
       </div> <!-- end main --> 
 
-
-       <!-- --------------------------------------------------------------------- -->
       <div id="side_bar">
-
+        <div class="sidebarCont">
+             <div id="pastEvents">
+              <h4>Past events</h4>
+          <section id="sec_birth"> 
+            
+            <h5>Maggie's Birthday Party (21st Oct 2013) </h5>
+                <img id="bday" src="img/bookings/bday.jpg" width="120px" height="80px" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatis risus. </p>
+            </section> <!--End of Birthday Section -->
+            <section id="sec_xmas">
+           <h5>2012 Xmas Party </h5>
+                <img id="bday" src="img/bookings/xmas.jpg" width="120px" height="80px" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non ven vitae turpis. </p>
+            
+            </section><!--End of Xmas Section -->
+            <section id="sec_offCel">
+              <h5>2012 New Year's Eve Party </h5>
+                    <img id="bday" src="img/bookings/office party.jpg" width="120px" height="80px" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatitae turpis. </p>
+            </section> <!--End of office celebertion Section -->           
+        </div>
+      </div>  
          <nav>
           <ul>
             <li> <a href="#"> <img src="img/content/fb.png"> /theDiner </a> </li>
@@ -217,7 +192,7 @@
            </ul>
          </nav>
 
-      </div>  <!-- end sside_bar  -->
+      </div>  <!-- end side_bar  -->
 
     <div class="clear"></div>
     </div>
@@ -228,13 +203,13 @@
     <footer>
        <nav>
           <ul>
-            <li> <a href="home.html" class="active"> Home </a> </li>
+            <li> <a href="home.html"> Home </a> </li>
             <li> <span class="noLink">|</span> </li>
             <li> <a href="aboutus.html"> About Us </a> </li>
             <li> <span class="noLink">|</span> </li>
             <li> <a href="menu.html"> Menu </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="bookings.html"> Bookings </a> </li>
+            <li> <a href="bookings.html"  class="active"> Bookings </a> </li>
             <li> <span class="noLink">|</span> </li>
             <li> <a href="contactus.html"> Contact Us </a> </li>
             <li> <span class="noLink">|</span> </li>
@@ -249,7 +224,7 @@
        <p> &#169; 2013 Team six, Contact Us. </p>
     </footer>
     <div class="clear"></div>
-  </div> <!-- end footer_wrap --->
-
+  </div> <!-- end footer_wrap -->
+  <script src="js/bookings.js"></script>
 </body>
 </html>
