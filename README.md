@@ -3,9 +3,9 @@ restaurant
 
 TO DO: 
 
-- Home page
-
 - Site Map
+
+- Giftcard page?
 
 - Add careers.html to nav links in all pages and change copyright 2003 to 2013 
 
