@@ -320,6 +320,51 @@ footer nav .noLink{
 	padding:10px 0;
 }
 
+/* page-specific */
+.home #main {
+	padding-left:0;
+}
+#mainFeature {
+	background:url("../img/styling/horizBar.svg") no-repeat scroll 0 0 / 100% 100% transparent;
+	padding:20px 0;
+}
+
+.homeFeature {
+	width:228px;
+	display:block;
+	float:left;
+}
+
+.homeFeature a{
+	text-decoration:none;
+	color:#000;
+}
+.homeFeature p{
+	padding: 0 10px;
+}
+
+#mainFeature h2 {
+	margin: 0 10px;
+    width: 410px;
+}
+
+.homeFeature a h2, #mainFeature h2{
+	color:#fff;
+}
+.homeFeature .hfhWrapper, #mainFeature h2{
+	background:url("../img/styling/bar2.svg") no-repeat scroll 0 0 / 100% 100% transparent;
+	position: relative;
+    text-align: center;
+    z-index: 999;
+}
+.homeFeature:nth-child(2) .hfhWrapper {
+	color:#fff;
+	background:url("../img/styling/bar1.svg") no-repeat scroll 0 0 / 100% 100% transparent;
+}
+.homeFeature:last-child .hfhWrapper {
+	color:#fff;
+	background:url("../img/styling/bar3.svg") no-repeat scroll 0 0 / 100% 100% transparent;
+}
 #giftcard-form fieldset {
 	margin-bottom: 30px;
 	float: left;
@@ -395,6 +440,10 @@ border-radius: 10px;
 	margin-bottom:150px;
 }
 
+.home .sidebarCont {
+	margin-top:0;
+}
+
 .sidebarCont h2, .sidebarCont h4 {
 	font-family:"Mrs Sheppards";
 	font-size:36px;
@@ -415,6 +464,33 @@ border-radius: 10px;
 	background: #D82315;
     line-height: 1.25;
     padding: 10px;
+}
+#slider {
+	display: block;
+    float: right;
+    height: 250px;
+    margin-top: -20px;
+    position: relative;
+    width: 380px;
+    margin-right: 20px;
+}
+
+.nivo-caption {
+position: absolute;
+left: -250px;
+top: 40px;
+background: #fff;
+color: #000;
+width: 100%;
+z-index: 8;
+padding: 5px 10px;
+opacity: 1;
+overflow: hidden;
+display: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 210px;
 }
 
 .careers th, .careers td {

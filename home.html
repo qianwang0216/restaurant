@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Archie's Diner - Home</title>
+<link rel="stylesheet" href="styles/nivo-slider.css" />
 <link href="styles/main.css" rel="stylesheet" />
+
 </head>
 
-<body>
+<body class="home">
 
   
   <div id="header_wrap">
@@ -37,11 +39,45 @@
       
       <div id="main">
         <!--main content goes here-->
-        <h1>Something Something Something</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum. Morbi nec urna eget felis pretium aliquam sit amet id quam. Nam porttitor convallis nunc, sed pretium nisl blandit at. Aenean porta nisi a commodo rhoncus. Praesent nisi erat, commodo et eleifend ac, sagittis et nulla. Morbi fringilla pharetra est, ut consectetur orci consequat vitae.</p>
+        <div id="mainFeature">
+          <h2>menu highlights</h2>
 
-        <p>Aenean in tellus non nibh fringilla sagittis. Integer ullamcorper rhoncus orci non scelerisque. In sagittis dolor ac enim dapibus pretium. Sed molestie quam ligula, ac vulputate magna commodo vitae. Praesent commodo libero sapien, eget rutrum nunc bibendum a. Duis ultrices consectetur orci vitae commodo. Integer cursus rutrum malesuada. Integer odio diam, scelerisque sit amet molestie vel, dictum sed erat. Sed laoreet eu justo in gravida. Fusce tincidunt tortor vitae pharetra lobortis. Sed accumsan justo ut massa gravida interdum. Phasellus pulvinar arcu eget nibh semper vestibulum. </p>
+          <div id="slider" class="nivoSlider">
+              <a href="menu.html"><img src="img/menu/archieburger.jpg" alt="" title="#slide1" /></a>
+              <a href="menu.html"><img src="img/menu/pumpernickel.jpg" alt="" title="#slide2" /></a>
+              <a href="menu.html"><img src="img/menu/quesadilla.jpg" alt="" title="#slide3" /></a>
+          </div>
+          <div id="slide1" class="nivo-html-caption">
+              <p>Archie's famous burger is made with fresh Ontario beef topped with caramelized onions, tomato, lettuce and horseradish mustard served with fries or salad</p>
+          </div>
+          <div id="slide2" class="nivo-html-caption">
+            <p>Roasted chicken breast with sliced, lettuce and bacon on pumpernickel with coleslaw and a kosher pickel on the side</p>
+          </div>
+          <div id="slide3" class="nivo-html-caption">
+             <p>Black beans, tomatoes, corn salsa, pepper jack and goat cheese served with sour and guacamole</p>
+          </div>
+          <div class="clear"></div>
+          </div>
+      
+      <div class="homeFeature">
+      <a href="contect.html">
+       <div class="hfhWrapper"><h2>contest</h2></div>
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
+      </a>
+      </div> 
+      <div class="homeFeature">
+        <a href="">
+      <div class="hfhWrapper"><h2>feature</h2></div>
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
+      </a>
+      </div>  
+      <div class="homeFeature">
+        <a href="contect.html">
+       <div class="hfhWrapper"><h2>feature</h2></div>
+      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
+      </a>
       </div>
+      </div>   
       <!-- end main --> 
       <div id="side_bar">
         <div class="sidebarCont">
@@ -93,6 +129,17 @@
     </footer> 
     <div class="clear"></div>
   </div> <!-- end footer_wrap --> 
-
+  <script src="js/vendors/jquery.js"></script>
+  <script src="js/plugins/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+      effect:'fade',
+      slices: 1,                     
+      boxCols: 1,                     
+      boxRows: 1                     
+    });
+});
+</script>
 </body>
 </html>
