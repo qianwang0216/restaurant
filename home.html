@@ -38,7 +38,9 @@
       <div id="main">
         <!--main content goes here-->
         <div id="mainFeature">
-          <h2>menu highlights</h2>
+          <div class="hmfhWrapper">
+			<h2>menu highlights</h2>
+		  </div>		
 
           <div id="slider" class="nivoSlider">
               <a href="menu.html"><img src="img/menu/archieburger.jpg" alt="" title="#slide1" /></a>
@@ -46,13 +48,13 @@
               <a href="menu.html"><img src="img/menu/quesadilla.jpg" alt="" title="#slide3" /></a>
           </div>
           <div id="slide1" class="nivo-html-caption">
-              <p>Archie's famous burger is made with fresh Ontario beef topped with caramelized onions, tomato, lettuce and horseradish mustard served with fries or salad</p>
+              <h3>Archie's Famous Burger</h3><p> Made with fresh Ontario beef topped with caramelized onions, tomato, lettuce and horseradish mustard served with fries or salad</p>
           </div>
           <div id="slide2" class="nivo-html-caption">
-            <p>Roasted chicken breast with sliced, lettuce and bacon on pumpernickel with coleslaw and a kosher pickel on the side</p>
+            <h3>Pumpernickel Club House</h3><p>Roasted chicken breast with sliced, lettuce and bacon on pumpernickel with coleslaw and a kosher pickel on the side</p>
           </div>
           <div id="slide3" class="nivo-html-caption">
-             <p>Black beans, tomatoes, corn salsa, pepper jack and goat cheese served with sour and guacamole</p>
+             <h3>Quesadilla</h3><p>Black beans, tomatoes, corn salsa, pepper jack and goat cheese served with sour and guacamole</p>
           </div>
           <div class="clear"></div>
           </div>
@@ -140,7 +142,8 @@ $(window).load(function() {
       effect:'fade',
       slices: 1,                     
       boxCols: 1,                     
-      boxRows: 1, 
+      boxRows: 1,
+	  pauseTime: 5000,	  
 	  directionNav: false,             // Next & Prev navigation
       controlNav: false,               // 1,2,3... navigation
       controlNavThumbs: false        // Use thumbnails for Control Nav		
