@@ -58,6 +58,15 @@ strong, b, th {
 em, i {
 	font-style:italic;
 }
+a {
+	text-decoration:none;
+	color:#651404;
+	border-bottom:1px solid #999;
+}
+a:hover {
+	color:#000;
+	border-bottom: 1px solid #651404;
+}
 nav ul{
 	display:block;
 }
@@ -69,6 +78,7 @@ nav ul li {
 
 nav a {
 	text-decoration:none;
+	border-bottom: 0 none;
 }
 
 nav a.active {
@@ -77,6 +87,8 @@ nav a.active {
 
 nav a:hover {
 	text-decoration:underline;
+	color:#fff;
+	border-bottom: 0 none;
 }
 
 input, select, textarea {
@@ -365,7 +377,7 @@ footer nav .noLink{
 	line-height: 1;
 	background: #d22a09;
 }
-.homeFeature .hfhWrapper, #mainFeature .hmfhWrapper{
+.homeFeature .hfhWrapper, #mainFeature .hmfhWrapper, .hWrapper{
 	background:url("../img/styling/bar2.svg") no-repeat scroll 0 0 / 100% 100% transparent;
 	position: relative;
     text-align: center;
@@ -425,7 +437,7 @@ border-radius: 10px;
 	padding: 5px 5px;
 	background: #FFF9E8;
 	margin-bottom: 3px;
-	width: 60%;
+	/*width: 60%;*/
 }
 
 .menucat {

@@ -1,5 +1,5 @@
 #menutitles {
-	border-left: 1px solid #d22a09;
+	/*border-left: 1px solid #d22a09;*/
 	overflow: hidden;
 }
 
@@ -7,12 +7,13 @@
 	float: left;
 	padding: 5px 15px;
 	border: 1px solid #d22a09;
-	border-left: 0;
+	/*border-left: 0;*/
 }
 
 #menutitles li a {
 	text-decoration: none;
 	color: #d22a09;
+	border-bottom: 0 none;
 }
 
 .menucat {	/*.tabs div*/
@@ -20,4 +21,6 @@
 	padding: 10px;
 }
 
-#menutitles li.selected { background-color: #fff9e8 }
+#menutitles li.selected { background-color: #d22a09;  }
+
+#menutitles li.selected a {color:#fff;}
