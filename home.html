@@ -59,19 +59,24 @@
       
       <div class="homeFeature">
       <a href="contect.html">
-       <div class="hfhWrapper"><h2>contest</h2></div>
-      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
+       <div class="hfhWrapper"><h2>contest</h2></div>	   
+      <p>
+		<img src="img/content/contestHome.png" alt="" />
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
       </a>
       </div> 
       <div class="homeFeature">
         <a href="">
-      <div class="hfhWrapper"><h2>feature</h2></div>
-      <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
+      <div class="hfhWrapper"><h2>bookings</h2></div>
+      <p>
+		 <img src="img/content/bookingsHome.png" alt="" />
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
       </a>
       </div>  
       <div class="homeFeature">
         <a href="contect.html">
        <div class="hfhWrapper"><h2>feature</h2></div>
+	   <img src="img/content/contestHome.png" alt="" />
       <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
       </a>
       </div>
@@ -135,7 +140,10 @@ $(window).load(function() {
       effect:'fade',
       slices: 1,                     
       boxCols: 1,                     
-      boxRows: 1                     
+      boxRows: 1, 
+	  directionNav: false,             // Next & Prev navigation
+      controlNav: false,               // 1,2,3... navigation
+      controlNavThumbs: false        // Use thumbnails for Control Nav		
     });
 });
 </script>
