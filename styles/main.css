@@ -363,6 +363,15 @@ footer nav .noLink{
 	padding: 0 10px;
 }
 
+#specImg {
+width:208px;
+margin: 0 10px;
+}
+
+#specImg img {
+max-width:100%;
+}
+
 #mainFeature .hmfhWrapper {
 	width:410px;
 }

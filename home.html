@@ -60,7 +60,7 @@
           </div>
       
       <div class="homeFeature">
-      <a href="contect.html">
+      <a href="contest.html">
        <div class="hfhWrapper"><h2>contest</h2></div>	   
       <p>
 		<img src="img/content/contestHome.png" alt="" />
@@ -68,7 +68,7 @@
       </a>
       </div> 
       <div class="homeFeature">
-        <a href="">
+        <a href="bookings.html">
       <div class="hfhWrapper"><h2>bookings</h2></div>
       <p>
 		 <img src="img/content/bookingsHome.png" alt="" />
@@ -76,11 +76,13 @@
       </a>
       </div>  
       <div class="homeFeature">
-        <a href="contest.html">
-       <div class="hfhWrapper"><h2>feature</h2></div>
+        <a href="specials.html">
+       <div class="hfhWrapper"><h2>specials</h2></div>
 	 
-      <p> 
-	    <img src="img/content/contestHome.png" alt="" />
+		<div id="specImg">
+			<img src="img/content/contestHome.png" alt="" />
+		</div>	
+      <p id="specOffer"> 
 	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper sem dolor, quis egestas risus mollis nec. Maecenas mollis sapien ac eleifend adipiscing. Aenean ultricies mi ut risus consectetur, ut dignissim lorem vestibulum.</p>
       </a>
       </div>
@@ -151,6 +153,42 @@ $(window).load(function() {
       controlNavThumbs: false        // Use thumbnails for Control Nav		
     });
 });
+</script>
+<script>
+var d = new Date();
+var specDay = d.getDay();
+//document.getElementById('weekday').innerHTML = specDay;
+//var specImg = document.getElementById('specImg').innerHTML;
+switch (specDay) {
+case 0:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/cannelloni.jpg" alt="Spinach Ricotta Cannelloni" />';
+  document.getElementById('specOffer').innerHTML='Sunday&mdash;Spinach Ricotta Cannelloni for $10.00'
+  break;
+case 1:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/grilledcheese.jpg" alt="Grilled Cheese on Callah" />';
+  document.getElementById('specOffer').innerHTML='Monday&mdash;Grilled Cheese on Callah for $3.00';
+  break;
+case 2:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/quesadilla.jpg" alt="Quesadilla" />';
+  document.getElementById('specOffer').innerHTML='Tuesday&mdash;Quesadilla for $5.50';
+  break;
+case 3:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/onionsoup.jpg" alt="Crockpot Onion Soup" />';
+  document.getElementById('specOffer').innerHTML='Wednesday&mdash;Crockpot Onion Soup for $3.00';
+  break;
+case 4:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/cheesyfries.jpg" alt="Cheesy Fries" />';
+  document.getElementById('specOffer').innerHTML='Thursday&mdash;Cheesy Fries for $3.25';
+  break;
+case 5:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/archieburger.jpg" alt="Archie\'s Burger" />';
+  document.getElementById('specOffer').innerHTML='Friday&mdash;Archie\'s Burger for $10.00';
+  break;
+case 6:
+  document.getElementById('specImg').innerHTML='<img src="img/menu/meatloaf.jpg" alt="Home-made Meatloaf" />';
+  document.getElementById('specOffer').innerHTML='Saturday&mdash;Home-made Meatloaf for $12.00';
+  break;
+}
 </script>
 </body>
 </html>
