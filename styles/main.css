@@ -573,3 +573,5 @@ width: 210px;
     margin: 15px 0 9px;
     padding-top: 5px;
 }
+
+#contactReset { outline: none; }
