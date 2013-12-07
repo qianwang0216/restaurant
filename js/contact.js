@@ -69,5 +69,7 @@ function Submit(){
 	frm.phone.value="";
 	frm.email.value="";
 	frm.message.value="";
+	frm.message.style.width = "210px";
+	frm.message.style.height = "95px";
 	
 }
