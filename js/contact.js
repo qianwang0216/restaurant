@@ -3,19 +3,13 @@ function Submit(){
 	var emailReg=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 	var postcodeReg=/^\s*[a-ceghj-npr-tvxy]\d[a-z](\s)?\d[a-z]\d\s*$/i;
 	var phoneReg="0123456789";
-	var letters="abcdefghijklmnopqrstuvwxyz";
+
 	//name
 	var name=document.frm.name.value;
 	if(name==""){
 		alert("Please input your name");
 		document.frm.name.focus();
 		return false;
-	}
-	for(i=0;i<name.length;i++){
-		if(letters.indexOf(name.charAt(i))==-1){
-			alert("Please input valid name");
-			return false;	
-		}
 	}
 	//address
 	var address=document.frm.address.value;
@@ -38,7 +32,7 @@ function Submit(){
 	//phone number
 	var phone=document.frm.phone.value;
 	if(phone==""){
-		alert("Please input your phone number");
+		alert("Please input your phone number (e.g. '4165551234')");
 		document.frm.phone.focus();
 		return false;
 	}
@@ -56,7 +50,7 @@ function Submit(){
 		return false;
 	}
 	if(!emailReg.test(email)){
-		alert("Please input valid email");
+		alert("Please input valid email (e.g. diner@archies.ca");
 		return false;
 	}
 	//message
@@ -67,7 +61,7 @@ function Submit(){
 		return false;	
 	}
 
-	alert("Thank you for you contact, "+name+"! We recieved your message and we will reply in 24h!");
+	alert("Thank you for you contact, "+name+"! We received your message and we will reply within 24 hours. Have a nice day!");
 	
 	frm.name.value="";
 	frm.address.value="";
