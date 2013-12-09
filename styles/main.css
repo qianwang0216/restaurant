@@ -123,7 +123,12 @@ input[type="button"], input[type="submit"], .buttonLink {
 	height:25px;
 	padding: 10px;
 	text-align: center;
-}	
+}
+
+.buttonLink:hover {
+	color: #651404;
+	border-bottom: 0 none !important;
+}		
 
 input[type="radio"], input[type="checkbox"] {
 	display:inline;
@@ -146,6 +151,13 @@ text-decoration:underline;
 }
 input.wide, .buttonLink.wide{
 	width:210px;
+}
+.home .buttonLink {
+	display: block;
+    float: none;
+    font-size: 1.25em;
+    margin-top: 20px;
+    width: 160px;
 }
 td, th {
 	text-align: left;
@@ -430,7 +442,9 @@ max-width:100%;
 -o-border-radius: 10px;
 border-radius: 10px;
 }
-
+.sidebarCont div.gcpreview {
+	background: #681207;
+}	
 
 .gcpreview p {
 	font-size: 24px;
