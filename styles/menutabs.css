@@ -1,16 +1,16 @@
-#menutitles {
-	/*border-left: 1px solid #d22a09;*/
-	overflow: hidden;
-}
+#menutitles { overflow: hidden; }
+ 
+#menutitles h2 { margin: 0; }
 
 #menutitles li {
 	float: left;
-	padding: 5px 15px;
+	padding: 0;
 	border: 1px solid #d22a09;
-	/*border-left: 0;*/
 }
 
 #menutitles li a {
+	display: block;
+	padding: 11px 15px 17px 15px;
 	text-decoration: none;
 	color: #d22a09;
 	border-bottom: 0 none;
@@ -21,6 +21,6 @@
 	padding: 10px;
 }
 
-#menutitles li.selected { background-color: #d22a09;  }
+#menutitles li.selected { background-color: #d22a09; }
 
-#menutitles li.selected a {color:#fff;}
+#menutitles li.selected a { color:#fff; }
