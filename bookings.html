@@ -97,13 +97,13 @@
 <h4>Check availability</h4> 
   <fieldset>
    <label for="sel_date">Select Date</label>
-   <input type="date" id="pic_date">
-   
+   <input type="date" id="pic_date" title="select date or input yyyy/mm/dd format" placeholder="yyyy/mm/dd" required>
+    
 <label for="size">party size</label>
-    <input type="number" name="p_size" id="p_size" value="1" step="1" min="1" max="20" placeholder="Number of seats required">
+    <input type="number" name="p_size" id="p_size" value="1" step="1" min="1" max="20" placeholder="Number of seats required" title="Please select size">
    
 <label for="se_time">Select Time</label>
-<select name="Sel_Time" id="Sel_Time" onChange="leaveChange()">
+<select name="Sel_Time" id="Sel_Time" onChange="leaveChange()" >
    	 	<option value="six">Select time </option>
         <option value="six">6.00pm-6.30pm </option>
     	<option value="sixT">6.30PM-7.00PM</option>
@@ -127,19 +127,20 @@
  </div> <!--End of check availability -->
  <div class="clear"></div>
 <div id="detail" style="display:none;">
-<fieldset >
+<fieldset > <!-- reservation form with Validation -->
   <br>
 <label for="dname">Guest Name</label>
  <input type="text" name="f_name" id="f_name" placeholder="First Name" required>
   <input type="text" name="l_name" id="l_name" placeholder="Last Name" required><br>
-<label for="dphone">Phone</label>
- <input type="text" name="m_phone" id="m_phone" placeholder="Mobile phone" >
-  <input type="text" name="h_phone" id="h_phone" placeholder="home phonee" required><br>
+<label for="dphone"> Mobile Phone</label>
+ <input type="text" name="m_phone" id="m_phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required placeholder="xxx-xxx-xxxx" title="Please input Phone no with area code" maxlength="12">
+ <label for="dphone"> Home Phone</label>
+  <input type="text" name="h_phone" id="h_phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required placeholder="xxx-xxx-xxxx" title="Please input Phone no with area code" maxlength="12" required><br>
 <label for="demail">E-mail</label>
-  <input type="email" name="email" id="email" ><br>
+  <input type="email" name="email" id="email" placeholder="abc@xam.ca" title="Please input in valid format" pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/"  ><br>
    <label for="seat_type">Is this your first time at this restaurant?</label>
-   <input type="radio" name="ryes" id="ryes" value="yes">Yes
-   <input type="radio" name="rno" id="rno" value="no">No<br>
+   <input type="radio" name="T_sel" id="T_sel" value="yes">Yes
+   <input type="radio" name="T_sel" id="T_sel" value="no">No<br>
    
    <input type="checkbox" name="doffers" id="doffers" title="Sign me to receive dianing offers" value="d_offers">Sign me up to receive dining offers<br>
    <input type="checkbox" name="soffers" id="soffers" title="Please send me a special offers" value="s_offers">Send me special offers<br><br>
@@ -151,7 +152,7 @@
      <br>
       <input type="button" id="btn_submit" name="btn_submit" value="Submit" onClick="return hide(),thankmsg();"> 
       
-</fieldset>
+</fieldset> <!-- end of reservation  -->
 
 
 
@@ -226,3 +227,4 @@
   <script src="js/bookings.js"></script>
 </body>
 </html>
+
