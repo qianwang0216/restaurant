@@ -116,8 +116,8 @@ function checkAnswer()
 	{
 	   restartGame(); 	
 	}
-	return "Guess " + curRow + " You have " + rightSpot + " item(s) that are in the right selection and right spot, and you have " + 
-	  rightSelection + " item(s) that are the right selection but the wrong spot."; 
+	return "Guess " + curRow + "<br />" + rightSpot + ": item(s) that are correct and in the right spot.  " + 
+	  "<br />" + rightSelection + ": item(s) that are correct but in the wrong spot.";  
 }
 
 function checkRightSelectionWrongSpot(number)
