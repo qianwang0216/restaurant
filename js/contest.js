@@ -71,7 +71,7 @@ function canvasClicked(canvasNum) {
         selectedCanvas = selectedCanvas.getContext("2d");
         var foodimg = new Image();
 		currContext[curCol] = (currContext[curCol] + 1) % (totalImages);
-        foodimg.src = "img/" + currContext[curCol] + ".jpg";
+        foodimg.src = "img/contest/" + currContext[curCol] + ".jpg";
         foodimg.onload = function() {
             selectedCanvas.drawImage(foodimg, 0, 0, 300, 150);
         }
