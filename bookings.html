@@ -126,7 +126,7 @@
 
  </div> <!--End of check availability -->
  <div class="clear"></div>
-<div id="detail" style="display:none;">
+<form id="detail" style="display:none;" onsubmit="return hide(),thankmsg();">
 <fieldset > <!-- reservation form with Validation -->
   <br>
 <label for="f_name">Guest Name</label>
@@ -137,7 +137,7 @@
  <label for="h_phone"> Home Phone</label>
   <input type="text" name="h_phone" id="h_phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required placeholder="xxx-xxx-xxxx" title="Please input Phone no with area code" maxlength="12"><br>
 <label for="email">E-mail</label>
-  <input type="email" name="email" id="email" placeholder="abc@xam.ca" title="Please input in valid format" pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/"  ><br>
+  <input type="email" name="email" id="email" placeholder="abc@xam.ca" title="Please input in valid format"><br>
    <label>Is this your first time at this restaurant?</label>
    <input type="radio" name="T_sel" class="T_sel" value="yes">Yes
    <input type="radio" name="T_sel" class="T_sel" value="no">No<br>
@@ -150,13 +150,13 @@
  <input type="text" name="S_req" id="S_req" placeholder="Your text here">
   
      <br>
-      <input type="button" id="btn_submit" name="btn_submit" value="Submit" onClick="return hide(),thankmsg();"> 
+      <input type="submit" id="btn_submit" name="btn_submit" value="Submit"> 
       
 </fieldset> <!-- end of reservation  -->
 
 
 
-</div> <!--end of detail reservation form -->
+</form> <!--end of detail reservation form -->
  <div id="msg1" style="padding-top:10px"></div>  
       </div> <!-- end main --> 
 
