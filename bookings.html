@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Archie's Diner - Bookings</title>
-<link href="styles/main.css" rel="stylesheet" />
+<link href="../../../Projects/restaurant-master/styles/main.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -11,18 +11,18 @@
      <header>
 
         <h1> The DINER </h1>
-        <div class="logo"><img src="img/content/logo.png"></div>
+        <div class="logo"><img src="../../../Projects/restaurant-master/img/content/logo.png" alt="logo"></div>
         <nav>
           <ul>
-            <li> <a href="home.html"> Home </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/home.html"> Home </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="aboutus.html"> About Us </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/aboutus.html"> About Us </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="menu.html"> Menu </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/menu.html"> Menu </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="bookings.html"  class="active"> Bookings </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/bookings.html"  class="active"> Bookings </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="contactus.html"> Contact Us </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/contactus.html"> Contact Us </a> </li>
           </ul>
         </nav>
         <div class="clear"></div>
@@ -96,14 +96,14 @@
 
 <h4>Check availability</h4> 
   <fieldset>
-   <label for="sel_date">Select Date</label>
-   <input type="date" id="pic_date" title="select date or input yyyy/mm/dd format" placeholder="dd/mm/yyyy" pattern="/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/" required >
+   <label for="pic_date">Select Date</label>
+   <input type="date" id="pic_date" title="select date or input yyyy/mm/dd format" required >
     
-<label for="size">party size</label>
+<label for="p_size">party size</label>
     <input type="number" name="p_size" id="p_size" value="1" step="1" min="1" max="20" placeholder="Number of seats required" title="Please select size" required />
    
-<label for="se_time">Select Time</label>
-<select name="Sel_Time" id="Sel_Time" onChange="leaveChange()" required >
+<label for="Sel_Time">Select Time</label>
+<select name="Sel_Time" id="Sel_Time" onChange="leaveChange()" >
    	 	<option value="six">Select time </option>
         <option value="six">6.00pm-6.30pm </option>
     	<option value="sixT">6.30PM-7.00PM</option>
@@ -130,25 +130,25 @@
 <div id="detail" style="display:none;">
 <fieldset > <!-- reservation form with Validation -->
   <br>
-<label for="dname">Guest Name</label>
+<label for="f_name">Guest Name</label>
  <input type="text" name="f_name" id="f_name" placeholder="First Name" required>
   <input type="text" name="l_name" id="l_name" placeholder="Last Name" required><br>
-<label for="dphone"> Mobile Phone</label>
+<label for="m_phone"> Mobile Phone</label>
  <input type="text" name="m_phone" id="m_phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required placeholder="xxx-xxx-xxxx" title="Please input Phone no with area code" maxlength="12">
- <label for="dphone"> Home Phone</label>
-  <input type="text" name="h_phone" id="h_phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required placeholder="xxx-xxx-xxxx" title="Please input Phone no with area code" maxlength="12" required><br>
-<label for="demail">E-mail</label>
+ <label for="h_phone"> Home Phone</label>
+  <input type="text" name="h_phone" id="h_phone" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"  placeholder="xxx-xxx-xxxx" title="Please input Phone no with area code" maxlength="12" required><br>
+<label for="email">E-mail</label>
   <input type="email" name="email" id="email" placeholder="abc@xam.ca" title="Please input in valid format" pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/"  ><br>
-   <label for="seat_type">Is this your first time at this restaurant?</label>
+   <label for="T_sel">Is this your first time at this restaurant?</label>
    <input type="radio" name="T_sel" id="T_sel" value="yes">Yes
-   <input type="radio" name="T_sel" id="T_sel" value="no">No<br>
+   <input type="radio" name="T_sel" id="T_sel1" value="no">No<br>
    
    <input type="checkbox" name="doffers" id="doffers" title="Sign me to receive dianing offers" value="d_offers">Sign me up to receive dining offers<br>
    <input type="checkbox" name="soffers" id="soffers" title="Please send me a special offers" value="s_offers">Send me special offers<br><br>
 
    
 <label for="srequest">Special Request</label>
- <input type="text" name="S_req" id="S_req" placeholder="Your text here">
+ <input type="text" name="srequest" id="srequest" placeholder="Your text here">
   
      <br>
       <input type="button" id="btn_submit" name="btn_submit" value="Submit" onClick="return hide(),thankmsg();"> 
@@ -168,27 +168,28 @@
           <section id="sec_birth"> 
             
             <h5>Maggie's Birthday Party (21st Oct 2013) </h5>
-                <img id="bday" src="img/bookings/bday.jpg" width="120px" height="80px" alt="">
+                <img id="bday" src="../../../Projects/restaurant-master/img/bookings/bday.jpg" width="120" height="80" alt="birth_day">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatis risus. </p>
             </section> <!--End of Birthday Section -->
             <section id="sec_xmas">
            <h5>2012 Xmas Party </h5>
-                <img id="bday" src="img/bookings/xmas.jpg" width="120px" height="80px" alt="">
+                <img id="bday1" src="../../../Projects/restaurant-master/img/bookings/xmas.jpg" width="120" height="80" alt="xmas">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non ven vitae turpis. </p>
             
             </section><!--End of Xmas Section -->
             <section id="sec_offCel">
               <h5>2012 New Year's Eve Party </h5>
-                    <img id="bday" src="img/bookings/office party.jpg" width="120px" height="80px" alt="">
+               <img id="bday3" src="../../../Projects/restaurant-master/img/bookings/officeparty.jpg" width="120" height="80" alt="xmas">
+                   <!-- <img id="bday2" src="../../../Projects/restaurant-master/img/bookings/office party.jpg" alt="office1" > -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie aliquam tortor, non venenatitae turpis. </p>
             </section> <!--End of office celebertion Section -->           
         </div>
       </div>  
          <nav>
           <ul>
-            <li> <a href="#"> <img src="img/content/fb.png"> /theDiner </a> </li>
-            <li> <a href="#"> <img src="img/content/tw.png"> @theDiner </a> </li>
-            <li> <a href="#"> <img src="img/content/rss.png"> Subscribe RSS </a> </li>
+            <li> <a href="#"> <img src="../../../Projects/restaurant-master/img/content/fb.png" alt="faceBook"> /theDiner </a> </li>
+            <li> <a href="#"> <img src="../../../Projects/restaurant-master/img/content/tw.png" alt="tw"> @theDiner </a> </li>
+            <li> <a href="#"> <img src="../../../Projects/restaurant-master/img/content/rss.png" alt="rss"> Subscribe RSS </a> </li>
            </ul>
          </nav>
 
@@ -203,21 +204,21 @@
     <footer>
        <nav>
           <ul>
-            <li> <a href="home.html"> Home </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/home.html"> Home </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="aboutus.html"> About Us </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/aboutus.html"> About Us </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="menu.html"> Menu </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/menu.html"> Menu </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="bookings.html"  class="active"> Bookings </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/bookings.html"  class="active"> Bookings </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="contactus.html"> Contact Us </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/contactus.html"> Contact Us </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="careers.html"> Careers </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/careers.html"> Careers </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="contest.html"> Contest </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/contest.html"> Contest </a> </li>
             <li> <span class="noLink">|</span> </li>
-            <li> <a href="sitemap.html" class="last"> Site Map </a> </li>
+            <li> <a href="../../../Projects/restaurant-master/sitemap.html" class="last"> Site Map </a> </li>
           </ul>
        </nav>
         <div class="clear"></div>
@@ -225,7 +226,7 @@
     </footer>
     <div class="clear"></div>
   </div> <!-- end footer_wrap -->
-  <script src="js/bookings.js"></script>
+  <script src="../../../Projects/restaurant-master/js/bookings.js"></script>
 </body>
 </html>
 
