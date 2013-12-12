@@ -36,10 +36,13 @@ function display(obj,id1,id2,id3) {
 	function leaveChange() {
     if (document.getElementById("Sel_Time").value != "six"){
         document.getElementById("message").innerHTML = "Table available for : "+p_size.value +" On "+pic_date.value;
+		 document.getElementById('reserv').style.display='block';
 		
     }     
     else{
         document.getElementById("message").innerHTML = "Sorry, all tables occupied";
+		 document.getElementById('reserv').style.display='none';
+		
     }        
 }
 
@@ -49,3 +52,4 @@ function thankmsg() {
       document.getElementById("msg1").innerHTML = "Thank you for your reservation. Hope to see you soon!";
 		
     }   
+	
