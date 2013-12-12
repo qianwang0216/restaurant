@@ -175,7 +175,7 @@ h1{
 	border-bottom: 1px solid #ffcd09;
 
 }
-h2{
+h2, #giftcard-form legend {
 	font-family:"Mrs Sheppards";
 	font-size:36px;
 	color:#d22a09;
@@ -589,3 +589,13 @@ width: 210px;
 }
 
 .btnReset { outline: none; }
+
+.qual p { text-align: left; }
+
+#header-date-label { width:179px; }
+
+#header-date { width:449px; }
+
+#contact-us { width: 600px; border:0; text-align: center;}
+
+.bday { width: 120px; height: 80px; }
